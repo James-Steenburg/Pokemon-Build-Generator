@@ -1,0 +1,59 @@
+#===============================================================================
+# Generated Team Criteria
+#===============================================================================
+#
+# Set the criteria from an RPG Maker event with:
+#
+#   RandomTeamGenerator.criteria = :STEEL_OU
+#
+# Then start the trainer battle. The on_trainer_load handler retrieves the
+# matching section and passes its settings to PokemonBuildGenerator.
+#
+#===============================================================================
+
+[ANY_SIX]
+team_size = 6
+
+[STEEL_OU]
+team_size = 6
+tier = OU
+mega_limit = 1
+unique_items = true
+no_duplicate_species = true
+monotype = STEEL
+
+[RANDOM_OU]
+team_size = 6
+tier = OU
+mega_limit = 1
+unique_items = true
+no_duplicate_species = true
+
+[WEAK_RANDOM]
+team_size = 6
+tier = PU
+no_duplicate_species = true
+bst_range = 300, 400
+
+[TAG_BALANCED_OU]
+team_size = 6
+tier = OU
+no_duplicate_species = true
+tag_requirements = OFFENSIVE:2, DEFENSIVE:2
+
+[BST_DISTRIBUTION]
+team_size = 6
+tiers = OU, UU, RU
+no_duplicate_species = true
+bst_targets = 350, 375, 400, 425, 450, 475
+bst_target_tolerance = 25
+
+[WEAKER_RANDOM]
+team_size = 3
+tier = PU
+no_duplicate_species = true
+
+[EVEN_WEAKER_RANDOM]
+team_size = 1
+tier = PU
+no_duplicate_species = true
